@@ -11,6 +11,7 @@ class LogisticSystem {
 
     static void addUser(String name, String login, String password){ //Добавление пользователя
             users.add(new User(name, login, password));
+
     }
 
     static boolean FindUser(String login, String password){ //Поиск пользователя по массиву пользователей
@@ -33,34 +34,36 @@ class LogisticSystem {
         return false;
     }
 
-//    static void save() throws IOException { //Сохранение данных пользователя в файл
-////        try {
-////            FileWriter out = new FileWriter("Ussers.txt", true);
-////            for (User u : users) {
-////                out.append(u.getLogin()).append(" ");
-////                out.append(u.getLogin()).append(" ");
-////                out.append(u.getPassword()).append(" ");
-////                out.append("\n");
-////            }
-////            out.close();
-////        }
-////        catch (IOException e){
-////            System.out.println("Error: File already exists");
-////        }
-////    }
-////
-////    static void load() throws FileNotFoundException {//Чтение данных пользователя из файл
-////        try {
-////
-////            Scanner in = new Scanner(new File("Ussers.txt"));
-////            while (in.hasNext()) {
-////                lockfile.add(in.next());
-////            }
-////        }
-////        catch (FileNotFoundException e){
-////            System.out.println("Error: File not found");
-////        }
-////    }
+/*
+    static void save() throws IOException { //Сохранение данных пользователя в файл
+//        try {
+//            FileWriter out = new FileWriter("Ussers.txt", true);
+//            for (User u : users) {
+//                out.append(u.getLogin()).append(" ");
+//                out.append(u.getLogin()).append(" ");
+//                out.append(u.getPassword()).append(" ");
+//                out.append("\n");
+//            }
+//            out.close();
+//        }
+//        catch (IOException e){
+//            System.out.println("Error: File already exists");
+//        }
+//    }
+//
+//    static void load() throws FileNotFoundException {//Чтение данных пользователя из файл
+//        try {
+//
+//            Scanner in = new Scanner(new File("Ussers.txt"));
+//            while (in.hasNext()) {
+//                lockfile.add(in.next());
+//            }
+//        }
+//        catch (FileNotFoundException e){
+//            System.out.println("Error: File not found");
+//        }
+//    }
+*/
 
     static void SaveSerializable() {//Сериализация файла - сохранение
         try {

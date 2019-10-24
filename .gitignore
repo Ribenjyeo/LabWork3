@@ -1,6 +1,2 @@
 # Project exclude paths
-# Ignore any file named foo.txt.
-Ussers.txt
-# Ignore any file named LisUssers
-ListUssers
 /out/

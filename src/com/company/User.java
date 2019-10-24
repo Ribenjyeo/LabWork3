@@ -8,12 +8,13 @@ public class User implements Serializable{
     private String login;
     private String password;
 
+    public User(){}
+
     public User(String name, String login, String password){
         super();
         this.name = name;
         this.login = login;
-        this.password = password;
-    }
+        this.password = password; }
 
     String getName(){//Возвращает имя
         return this.name;
@@ -32,8 +33,21 @@ public class User implements Serializable{
         return "User [name = " +name +", login = " + login +", password = " +password + "]";
     }
 
-    class Admin{//Внутрений класс Админ
-        User a = new User("Alex Kinsman", "admin", "admin");
+    static class Admin {
+        private String login = "admin";
+        private String password = "admin";
 
+        Admin(String login, String password){
+            login = this.login;
+            password = this.password;
+        }
+
+        String getLogin(){
+            return this.login;
+        }
+
+        String getPassword(){
+            return this.password;
+        }
     }
 }
